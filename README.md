@@ -53,10 +53,13 @@ Revealed the top 5 Zip codes:
 The autoarima package enables a stepwise search of the best parameters of an ARIMA model. Autoarima was applied to each of the 5 identified regions. Next, each model forecasted a 3 year investment horizon:
 
 <img width="377" alt="Screen Shot 2022-08-14 at 2 33 37 PM" src="https://user-images.githubusercontent.com/87211473/184564516-6fb6da6e-fcea-42af-a2fb-21f54df027fb.png">
+
 <img width="408" alt="Screen Shot 2022-08-14 at 2 35 56 PM" src="https://user-images.githubusercontent.com/87211473/184564769-94f2f1ef-b56a-4709-9c3c-b81c509d8286.png">
+
 <img width="402" alt="Screen Shot 2022-08-14 at 2 39 57 PM" src="https://user-images.githubusercontent.com/87211473/184564793-6aa52632-5dcc-4941-add6-7866fd81330d.png">
 
 <img width="435" alt="Screen Shot 2022-08-14 at 2 39 20 PM" src="https://user-images.githubusercontent.com/87211473/184564813-1c379562-3e8f-4394-a1cb-beff312e40cb.png">
+
 <img width="403" alt="Screen Shot 2022-08-14 at 2 37 49 PM" src="https://user-images.githubusercontent.com/87211473/184564827-58f45f31-bcd1-4311-8312-165365c36ae9.png">
 
 # Interpretation
@@ -70,12 +73,28 @@ Returning to our modeling criteria, each regions return on investment and sharpe
 Analyzing the forecasted ROI and sharpe ratio, I recommend to the firm:
 <br>
 
-Invest in region 1, 2, 3, and 5.
-<br>
-Do not invest in region 4
+1. Invest in region 1, 2, 3, and 5.
 <br>
 
-Regions 1, 2, 3, and 5 forecast ROI with efficient risk adjusted return. However, region 4 does not provide efficient risk adjusted return. Moreover, region 4 showed the lowest return on investment over the forecasted period.
+2. Do not invest in region 4
+<br>
+
+3. Regions 1, 2, 3, and 5 forecast ROI with efficient risk adjusted return. However, region 4 does not provide efficient risk adjusted return. Moreover, region 4 showed the lowest return on investment over the forecasted period.
+<br>
+
+The regions selected share certain characteristics that yield attractive risk adjusted return. Each zip code is from a Tier 1 or 2 city. These cities (New York, Los Angeles, Washington DC) share the characteristics of:
+<br>
+
+1. Healthy employment and strong economics anchored by the higher than usual opportunity in these high tier cities. In fact, regions 1, 2, 3, and 5 all have unemployment rates at or below 6%. For example, regions 1 and 2 neighbor Capitol Hill.
+<br>
+
+2. Proximity to amenities such as parks, entertainment, or transit.
+<br>
+
+3. Population growth fueling housing demand.
+<br>
+
+Therefore, I also recommend that future investment consideration adheres to these characteristics. Together, they create strong demand that results in efficient ROI. Further analysis that uses employment, income growth, and population growth may reveal other lucrative zip codes.
 
 # Limitations
 
@@ -84,4 +103,11 @@ Real estate prices are not just a function of time, but a relationship between s
 
 Sampling the top 50 zip codes by size rank during EDA allowed us to somewhat capture qualitative factors not included.
 
+# Repository Structure
+
+├── README.md                           <- The top-level README for reviewers of this project
+<br>
+├── time-series                         <- Narrative documentation of analysis in Jupyter notebook
+<br>
+├── TS_presentation.pdf                  <- PDF version of project presentation
 
